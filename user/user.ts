@@ -1,0 +1,17 @@
+export interface IUser {
+    User_id: string,
+    FirstName: string,
+    LastName: string,
+    Dob: string,
+    City: string,
+    State: string,
+    ContactNumber: number,
+    Email: string,
+    ReedeemableCoins: number,
+    TotalCoins: number,
+    Age: number,
+    Country: string,
+    HouseNo: string,
+    TotalBets: number,
+    Gender: string,
+}

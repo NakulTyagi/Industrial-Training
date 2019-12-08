@@ -1,0 +1,116 @@
+<app-sidebar></app-sidebar>
+
+
+<main role="main" class="main-panel">
+  <!-- <app-toolbar></app-toolbar> -->
+  <div class="content">
+    <div class="row">
+      <div class="col-md-6 " style="display: inline-block; padding: 30px 0px 5px 30px;">
+        <span class="customHead" style="margin-top:8px;">USER</span> </div>
+      <div class="col-md-6"></div>
+    </div>
+    <div class="input-group mb-3" id="input">
+      <input type="text" class="form-control" id="contact" placeholder="Contact Number"
+        aria-label="Recipient's username" aria-describedby="basic-addon2" value="">
+      <!-- <div class="input-group-append"> -->
+      <span> <button class="btn btn-raised btn-info btn-input-group-text" id="basic-addon2"
+          (click)="fetchUser()">Search</button></span>
+      <!-- </div> -->
+    </div>
+
+    <div id="coins">
+      <h4 id="footer" class="footer">REDEEMABLE COINS :{{redeemableCoins}}<br><button type="button" id="inc"
+          class="btn btn-raised btn-info" (click)="add()">+</button><button type="button" id="inc"
+          class="btn btn-raised btn-info" (click)="sub()">-</button> <input id="red-inp" type="number"
+          class="form-control" value=0 aria-label="Username" aria-describedby="basic-addon1"></h4>
+
+
+      <h4 id="footer" class="footer"><span>TOTAL COINS: {{totalCoins}}</span><br><button type="button" id="inc"
+          class="btn btn-raised btn-info" (click)="addT()">+</button><button type="button" id="inc"
+          class="btn btn-raised btn-info" (click)="subT()">-</button> <input type="number" id="red-inpT"
+          class="form-control" placeholder="{{TotalCoins}}" value=0 aria-label="Username"
+          aria-describedby="basic-addon1"></h4>
+      <!-- <button type="button" id="btn" class="btn btn-raised btn-info" (click)="update()">UPDATE</button> -->
+    </div>
+
+    <div id="user">
+      <h1 id="name">{{FirstName}} {{LastName}} ({{User_id}}) <img id="gender" src="{{genderImage}}" alt=""> </h1>
+
+      <img id="user-img" src="{{image}}" alt="">
+
+      <div id="details1">
+
+        <h4>Email : {{Email}} </h4>
+        <h4>Contact : {{ContactNumber}}</h4>
+        <h4>DOB : {{Dob}}</h4>
+        <h4>Age : {{Age}}</h4>
+      </div>
+      <div id="details2">
+
+        <h4>City : {{City}}</h4>
+        <h4>State : {{State}}</h4>
+        <h4>Country: {{Country}}</h4>
+        <h4>HouseNo : {{HouseNo}}</h4>
+
+
+      </div>
+    </div>
+
+
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">
+            <font color="#1a8cff"> S.No</font>
+          </th>
+          <th scope="col">
+            <font color="#1a8cff"> Date</font>
+          </th>
+          <th scope="col">
+            <font color="#1a8cff"> Time</font>
+          </th>
+          <th scope="col">
+            <font color="#1a8cff"> Coins Gained</font>
+          </th>
+          <th scope="col">
+            <font color="#1a8cff"> Coins Lost</font>
+          </th>
+          <th scope="col">
+            <font color="#1a8cff"> Total</font>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>02/07/19</td>
+          <td>3:00</td>
+          <td>2000</td>
+          <td>0</td>
+          <td>10000</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>02/07/19</td>
+          <td>5:00</td>
+          <td>0</td>
+          <td>1000</td>
+          <td>9000</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>02/07/19</td>
+          <td>00:00</td>
+          <td>1200</td>
+          <td>2000</td>
+          <td>8200</td>
+        </tr>
+      </tbody>
+    </table>
+
+
+
+
+  </div>
+</main>
